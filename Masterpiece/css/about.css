@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 70px;
+    background-color: #f8f9fa;
+}
+
+/* ======= NAVBAR ======= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004b8d;
+    padding: 15px 50px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* ======= CONTENT SECTIONS ======= */
+.section {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 1px 4px 8px rgba(0, 75, 141, 0.3);
+    max-width: 90%;
+}
+
+.section img {
+    width: 25%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section img:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    width: 70%;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+h2 {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+.text h2 {
+    margin-top: 0;
+}
+
+/* ======= FOOTER ======= */
+footer {
+    background: #004b8d;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    max-width: 300px;
+}
+
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons span {
+    margin: 0 10px;
+    font-size: 18px;
+}
